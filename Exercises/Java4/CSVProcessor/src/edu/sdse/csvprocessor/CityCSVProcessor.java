@@ -9,6 +9,7 @@ import java.util.HashMap;
 
 public class CityCSVProcessor {
 
+
 	public void readAndProcess(File file) {
 		//Try with resource statement (as of Java 8)
 		try (BufferedReader br = new BufferedReader(new FileReader(file))) {
@@ -69,7 +70,7 @@ public class CityCSVProcessor {
 				double averagePopulation = populationSum * 1.0 / noEntries;
 
 
-				System.out.println("Average population of " + city + "(" + minYear + "-" + maxYear + ") : " + averagePopulation);
+				System.out.println("Average population of " + city + "(" + minYear + "-" + maxYear + ";" + noEntries + ") : " + averagePopulation);
 
 			}
 
